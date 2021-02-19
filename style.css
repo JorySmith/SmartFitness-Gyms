@@ -1,7 +1,64 @@
+:root {
+  --ff-pri: 'Mulish', sans-serif;
+  --ff-sec: 'Roboto', sans-serif;
+
+  --dark-orange: #FF5C00;
+  --light-orange: #FF7E36;
+  --dark-grey: #636363;
+  --light-grey: #CDCDCD;  
+  --dark: #000;
+  --bright: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
 
 html,
 body {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  padding: 0;   
+  font-family: var(--ff-pri);
+  color: var(--light-orange);
+  width: 100%;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 2rem;
+  color: var(--dark);
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: var(--dark);
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--light-orange);
+}
+
+button {
+  font-family: var(--ff-pri);
+  cursor: pointer;
+}
+
+main {
+  padding: 0 .25rem;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav .highlight-text,
+.navbar-custom .navbar-nav .sign-in {
+  color: var(--light-orange);
+}
+
+.navbar-brand,
+.navbar-collapse {
+  padding: 0 2rem;
 }
