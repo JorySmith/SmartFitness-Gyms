@@ -52,13 +52,24 @@ main {
   padding: 0 .25rem;
 }
 
+.navbar {
+  padding: 2rem 3.25rem;
+}
+
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-nav .highlight-text,
 .navbar-custom .navbar-nav .sign-in {
   color: var(--light-orange);
 }
 
-.navbar-brand,
-.navbar-collapse {
-  padding: 0 2rem;
+.navbar-custom .navbar-brand {
+  font-size: 1.4rem;
+}
+
+.navbar-custom .navbar-nav .sign-in {
+  padding-right: 0;
+}
+
+.carousel {
+  padding: 0 3rem;
 }
