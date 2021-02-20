@@ -60,7 +60,7 @@ section {
 }
 
 .navbar {
-  padding: 1rem .75rem;
+  padding: 1rem .65rem;
 }
 
 .navbar-custom .navbar-brand,
@@ -78,48 +78,14 @@ section {
 }
 
 .banner {
-  padding: 0 0 2rem;
+  padding: 1rem 0 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 .carousel {  
-  overflow: hidden;
   padding: 0 .75rem;
-}
-
-.carousel-item {
-  position: relative;
-}
-
-.h1-line1,
-.h1-line2,
-.h1-line3 {
-  position: absolute;
-  font-weight: bold;
-}
-
-.h1-line1 {  
-  top: 15%;
-  right: 35%;    
-}
-
-.h1-line2 {  
-  top: 22%;
-  right: 24%;
-}
-
-.h1-line3 {  
-  top: 30%;
-  right: 12%;
-}
-
-.offer {
-  position: absolute;
-  top: 68%;
-  right: 2%;
-  line-height: 1.2rem;
-  background-color: var(--dark-orange);
-  color: #fff;
-  padding: .5rem;
+  max-width: 120ch;
 }
 
 .our-philosophy {
