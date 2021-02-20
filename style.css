@@ -83,6 +83,7 @@ section {
 
 .carousel {  
   overflow: hidden;
+  padding: 0 .75rem;
 }
 
 .carousel-item {
