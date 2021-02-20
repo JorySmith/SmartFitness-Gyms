@@ -6,8 +6,6 @@
   --light-orange: #FF7E36;
   --dark-grey: #636363;
   --light-grey: #CDCDCD;  
-  --dark: #000;
-  --bright: #fff;
 }
 
 * {
@@ -25,13 +23,17 @@ body {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1rem;
   color: var(--dark);
 }
 
 h2 {
   font-size: 1.2rem;
   color: var(--dark);
+  padding: 1rem;
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
 }
 
 p {
@@ -40,7 +42,7 @@ p {
 
 a {
   text-decoration: none;
-  color: var(--light-orange);
+  color: #fff;
 }
 
 button {
@@ -48,12 +50,12 @@ button {
   cursor: pointer;
 }
 
-main {
-  padding: 0 .25rem;
+section {
+  padding: 1rem 0 2rem; 
 }
 
 .navbar {
-  padding: 2rem 3.25rem;
+  padding: 1rem .75rem;
 }
 
 .navbar-custom .navbar-brand,
@@ -63,7 +65,7 @@ main {
 }
 
 .navbar-custom .navbar-brand {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .navbar-custom .navbar-nav .sign-in {
@@ -71,5 +73,175 @@ main {
 }
 
 .carousel {
-  padding: 0 3rem;
+  padding: 0;
+  overflow: hidden;
+}
+
+.carousel-item {
+  position: relative;
+}
+
+.h1-line1,
+.h1-line2,
+.h1-line3 {
+  position: absolute;
+  font-weight: bold;
+}
+
+.h1-line1 {  
+  top: 15%;
+  right: 35%;    
+}
+
+.h1-line2 {  
+  top: 22%;
+  right: 24%;
+}
+
+.h1-line3 {  
+  top: 30%;
+  right: 12%;
+}
+
+.offer {
+  position: absolute;
+  top: 68%;
+  right: 2%;
+  line-height: 1.2rem;
+  background-color: var(--dark-orange);
+  color: #fff;
+  padding: .5rem;
+}
+
+.our-philosophy {
+  background-color: var(--light-grey);   
+  text-align: center;
+}
+
+.our-philosophy p {  
+  padding: .5rem .5rem;
+  color: #000;
+}
+
+.our-philosophy .highlight-text-bg {
+  background-color: var(--light-orange);  
+  color: #fff;
+}
+
+.our-philosophy img {  
+  padding: .5rem 0;
+  max-width: 100%;
+}
+
+.playing {
+  text-align: center;  
+}
+
+.playing img {
+  width: auto;
+  max-height: 320px;
+}
+
+.locations {
+  text-align: center;
+}
+
+.locations img {  
+  max-width: 100%;
+  border-radius: 40%;
+  padding: 1rem;
+}
+
+.address-info {
+  text-align: center;
+}
+
+.address-info p {
+  background-color: var(--dark-grey);
+  padding: .5rem .5rem;
+}
+
+.address-info .highlight-text {
+  color: #fff;
+}
+
+.services {
+  background-color: var(--light-grey);
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+}
+
+.services img {
+  max-width: 100%;
+  padding: 1rem 0 0;
+}
+
+.services p {
+  padding: .5rem 0;
+}
+
+.membership {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000;
+}
+
+.membership img {
+  max-width: 70%;
+  border-radius: 45%;
+  padding: 1rem 0 2rem;
+}
+
+.membership-info {
+  text-align: left;
+}
+
+
+.membership-info p {
+  font-weight: bold;
+}
+
+.membership-info .highlight-text {
+  color: var(--light-orange);
+  font-weight: bold;
+}
+
+.membership-info ul {
+  margin-bottom: 2rem;;
+}
+
+.membership button {
+  background-color: var(--dark-orange);
+  color: #fff;
+  border: none;
+  padding: 1rem;
+}
+
+footer {
+  background-color: var(--dark-grey);
+  padding: 2rem .25rem;
+  text-align: center;
+  color: #fff;
+}
+
+footer ul {  
+  padding: 0;
+  list-style-type: none;
+}
+
+footer li {
+  display: inline-block;
+  line-height: 2rem;
+  padding: 0 .5rem;
+}
+
+.social-links i {
+  padding: 0 1rem;
+}
+
+hr {
+  border: 1px solid #fff;
+  margin: 1.25rem 0;
 }
