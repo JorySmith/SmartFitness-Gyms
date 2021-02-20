@@ -40,9 +40,14 @@ p {
   margin: 0;
 }
 
-a {
-  text-decoration: none;
+a {  
   color: #fff;
+
+}
+
+a:hover {
+  text-decoration: none;
+  color: #2f7fff;
 }
 
 button {
@@ -72,8 +77,11 @@ section {
   padding-right: 0;
 }
 
-.carousel {
-  padding: 0;
+.banner {
+  padding: 0 0 2rem;
+}
+
+.carousel {  
   overflow: hidden;
 }
 
@@ -217,6 +225,7 @@ section {
   color: #fff;
   border: none;
   padding: 1rem;
+  
 }
 
 footer {
