@@ -187,6 +187,7 @@ section {
 
 .services p {
   padding: .5rem 0;
+  font-weight: normal;
 }
 
 .membership {
