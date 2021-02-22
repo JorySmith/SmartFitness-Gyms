@@ -4,6 +4,7 @@
 
   --dark-orange: #FF5C00;
   --light-orange: #FF7E36;
+  --very-light-orange: #ffa575;
   --dark-grey: #636363;
   --light-grey: #CDCDCD;  
 }
@@ -17,7 +18,7 @@ body {
   margin: 0;
   padding: 0;   
   font-family: var(--ff-pri);
-  color: var(--light-orange);
+  color: #fff;
   width: 100%;
   overflow-x: hidden;
 }
@@ -85,7 +86,20 @@ section {
 
 .carousel {  
   padding: 0 .75rem;
-  max-width: 120ch;
+}
+
+.carousel-item {    
+  max-width: 1000px;
+}
+
+.carousel-item img {
+  max-width: 1000px;
+}
+
+.our-philosophy img,
+.locations img,
+.services img {
+  max-width: 448px;
 }
 
 .our-philosophy {
@@ -104,8 +118,7 @@ section {
 }
 
 .our-philosophy img {  
-  padding: .5rem 0;
-  max-width: 100%;
+  padding: .5rem 0;  
 }
 
 .playing {
@@ -121,8 +134,7 @@ section {
   text-align: center;
 }
 
-.locations img {  
-  max-width: 75%;
+.locations img {    
   border-radius: 40%;
   padding: 1rem;
 }
@@ -137,7 +149,7 @@ section {
 }
 
 .address-info .highlight-text {
-  color: #fff;
+  color: var(--very-light-orange);
 }
 
 .services {
@@ -147,8 +159,7 @@ section {
   font-weight: bold;
 }
 
-.services img {
-  max-width: 75%;
+.services img {  
   padding: 1rem 0 0;
 }
 
@@ -165,9 +176,10 @@ section {
 }
 
 .membership img {
-  max-width: 70%;
-  border-radius: 45%;
-  padding: 1rem 0 2rem;
+  max-width: 300px;
+  border-radius: 48%;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
 }
 
 .membership-info {
