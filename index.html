@@ -60,11 +60,11 @@
         <div class="carousel-inner">
 
           <div class="carousel-item active">
-            <img class="d-block w-100" src="./images/banner1.png" alt="First slide">
+            <a href="#contact-us"><img class="d-block w-100" src="./images/banner1.png" alt="First slide"></a>
           </div>
 
           <div class="carousel-item">
-            <img class="d-block w-100" src="./images/banner2.png" alt="Second slide">
+            <a href="#contact-us"><img class="d-block w-100" src="./images/banner2.png" alt="Second slide"></a>
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -177,10 +177,27 @@
           <li>Spa services</li>
         </ul>
       </div>
-      <button><a href="#">
+      <button><a href="#contact-us">
           Get Your Free Day Pass
         </a>
       </button>
+
+    </section>
+
+    <section class="contact-us" id="contact-us">
+      <h1>Contact Us</h1>
+      <div class="contact-us-container">
+        <form class="contact-us-form" action="POST" method="post">
+          <div class="entry"><label for="first-name">First Name:</label><input type="text" required></div>
+          <div class="entry"><label for="last-name">Last Name:</label><input type="text" required></div>
+          <div class="entry"><label for="email">Email:</label><input type="email" required></div>
+          <div class="entry"><label for="phone-number">Phone Number:</label><input type="tel"></div>
+          <div class="entry"><label for="subject">Subject:</label><input type="text" required></div>
+          <div class="entry"><label for="message">Message:</label><textarea rows="6" placeholder="Your message here"
+              required></textarea></div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
 
     </section>
 

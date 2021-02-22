@@ -2,9 +2,9 @@
   --ff-pri: 'Mulish', sans-serif;
   --ff-sec: 'Roboto', sans-serif;
 
-  --dark-orange: #FF5C00;
-  --light-orange: #FF7E36;
+  --dark-orange: #ff5900; 
   --very-light-orange: #ffa575;
+  --very-dark-grey: #252525;
   --dark-grey: #636363;
   --light-grey: #CDCDCD;  
 }
@@ -25,12 +25,12 @@ body {
 
 h1 {
   font-size: 1rem;
-  color: var(--dark);
+  color: var(--very-dark-grey);
 }
 
 h2 {
   font-size: 1.2rem;
-  color: var(--dark);
+  color: var(--very-dark-grey);
   padding: 1rem;
   margin: 0;
   text-align: center;
@@ -48,7 +48,7 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: #2f7fff;
+  color: #000;
 }
 
 button {
@@ -67,7 +67,7 @@ section {
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-nav .highlight-text,
 .navbar-custom .navbar-nav .sign-in {
-  color: var(--light-orange);
+  color: var(--dark-orange);
 }
 
 .navbar-custom .navbar-brand {
@@ -113,7 +113,7 @@ section {
 }
 
 .our-philosophy .highlight-text-bg {
-  background-color: var(--light-orange);  
+  background-color: var(--dark-orange);  
   color: #fff;
 }
 
@@ -155,7 +155,7 @@ section {
 .services {
   background-color: var(--light-grey);
   text-align: center;
-  color: #000;
+  color: var(--very-dark-grey);
   font-weight: bold;
 }
 
@@ -172,7 +172,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #000;
+  color: var(--very-dark-grey);
 }
 
 .membership img {
@@ -208,6 +208,43 @@ section {
   
 }
 
+.contact-us {
+  background-color: var(--light-grey);
+  color: var(--very-dark-grey);
+}
+
+.contact-us h1 {
+  background-color: var(--dark-orange);
+  color: #fff;
+  font-size: 1.75rem;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.contact-us-container {  
+  padding: 1rem;
+}
+
+.contact-us-form .entry {
+  display: flex;
+  flex-direction: column;
+  padding: .25rem 0;
+}
+
+.entry input:focus {
+  outline: 2px solid var(--dark-orange);  
+}
+
+.contact-us-form button {  
+  background-color: var(--dark-orange);
+  border: 1px solid var(--dark-orange);
+  color: #fff;
+  font-size: 1.25rem;
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0 0;
+}
+
 footer {
   background-color: var(--dark-grey);
   padding: 2rem .25rem;
@@ -234,3 +271,4 @@ hr {
   border: 1px solid #fff;
   margin: 1.25rem 0;
 }
+
