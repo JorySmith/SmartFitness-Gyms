@@ -123,8 +123,18 @@ section {
   padding: .5rem 0;  
 }
 
+.philosophies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.busy,
+.yoga-class,
 .playing {
-  text-align: center;  
+  max-width: 448px;
+  margin: .5rem 2rem;
 }
 
 .playing img {
@@ -132,13 +142,25 @@ section {
   max-height: 320px;
 }
 
-.locations {
+.locations {  
   text-align: center;
 }
 
-.locations img {    
+.locations-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.location img {    
   border-radius: 40%;
   padding: 1rem .5rem;
+}
+
+.location {
+  max-width: 448px;
+  margin: .5rem .5rem;
 }
 
 .address-info {
@@ -148,6 +170,8 @@ section {
 .address-info p {
   background-color: var(--dark-grey);
   padding: .5rem .5rem;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .address-info .highlight-text {
