@@ -97,7 +97,9 @@ section {
 }
 
 .our-philosophy img,
-.locations img {
+.locations img, 
+.personal-training img,
+.exercise-classes img {
   max-width: 448px;
   width: 100%;
 }
@@ -228,16 +230,33 @@ section {
 
 .contact-us-container {  
   padding: 1rem;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .contact-us-form .entry {
   display: flex;
   flex-direction: column;
-  padding: .25rem 0;
+  padding: .1rem 0;
 }
 
-.entry input:focus {
+.contact-us-form label {
+  padding: .25rem 0;
+  margin: 0;
+}
+
+.entry input,
+.entry textarea {
+  padding: .5rem .5rem;
+  margin: 0;
+  border: 1px solid #000;
+}
+
+.entry input:focus,
+.entry textarea:focus {
   outline: 2px solid var(--dark-orange);  
+  border: 2px solid var(--dark-orange);
 }
 
 .contact-us-form button {  
