@@ -43,7 +43,6 @@ p {
 
 a {  
   color: #fff;
-
 }
 
 a:hover {
@@ -54,6 +53,10 @@ a:hover {
 button {
   font-family: var(--ff-pri);
   cursor: pointer;
+  background-color: var(--dark-orange);
+  color: #fff;
+  border: none;
+  padding: 1rem;    
 }
 
 section {
@@ -100,8 +103,14 @@ section {
 .locations img, 
 .personal-training img,
 .exercise-classes img {
-  max-width: 448px;
+  max-width: 350px;  
   width: 100%;
+}
+
+.specialized-workouts img,
+.weight-equipment img,
+.membership img {
+  max-height: 350px;
 }
 
 .our-philosophy {
@@ -114,7 +123,8 @@ section {
   color: #000;
 }
 
-.our-philosophy .highlight-text-bg {
+.our-philosophy .highlight-text-bg,
+.services .highlight-text-bg {
   background-color: var(--dark-orange);  
   color: #fff;
 }
@@ -128,6 +138,8 @@ section {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  max-width: 1050px;
+  margin: 0 auto;
 }
 
 .busy,
@@ -191,12 +203,26 @@ section {
 
 .services p {
   padding: .5rem 0;
+  margin: .25rem 0;
   font-weight: normal;
 }
 
 .personal-training img,
 .exercise-classes img {
   width: 100%;
+}
+
+.specialized-workouts,
+.weight-equipment {
+  position: relative;
+}
+
+.specialized-workouts img,
+.specialized-workouts p,
+.weight-equipment img,
+.weight-equipment p {
+  position: relative;
+  z-index: 1;
 }
 
 .membership {
@@ -217,7 +243,6 @@ section {
   text-align: left;
 }
 
-
 .membership-info p {
   font-weight: bold;
 }
@@ -228,15 +253,7 @@ section {
 }
 
 .membership-info ul {
-  margin-bottom: 2rem;;
-}
-
-.membership button {
-  background-color: var(--dark-orange);
-  color: #fff;
-  border: none;
-  padding: 1rem;
-  
+  margin-bottom: 2rem;
 }
 
 .contact-us {
@@ -302,6 +319,7 @@ footer {
 
 footer ul {  
   padding: 0;
+  margin: 1rem 0;
   list-style-type: none;
 }
 
@@ -321,6 +339,48 @@ hr {
 }
 
 @media (min-width: 660px){
+  .spec-wo-weight-euip-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }  
+  .specialized-workouts,
+  .weight-equipment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #fff;
+    margin: 1rem;
+  }
+  .specialized-workouts p,
+  .weight-equipment p {
+    margin: 0 1rem;
+    text-shadow: 1px 1px 5px #000;
+  }
+  .weight-equipment {
+    flex-direction: row-reverse;
+  }
+  .triangle-right{
+    position: absolute;
+    left: 20%;
+    z-index: 0;
+    width: 0; 
+    height: 0; 
+    border-top: 14rem solid transparent;
+    border-bottom: 14rem solid transparent;  
+    border-left: 22rem solid var(--dark-orange);
+  }  
+  .triangle-left {
+    position: absolute;
+    right: 20%;
+    z-index: 0;
+    width: 0; 
+    height: 0; 
+    border-top: 14rem solid transparent;
+    border-bottom: 14rem solid transparent;  
+    border-right: 22rem solid var(--dark-orange);
+  }
 
 }
 
