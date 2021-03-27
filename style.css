@@ -339,6 +339,10 @@ hr {
 }
 
 @media (min-width: 660px){
+  .navbar {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
   .spec-wo-weight-euip-container {
     display: flex;
     justify-content: center;
